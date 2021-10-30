@@ -1,0 +1,71 @@
+.Grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items:center;
+    margin-top:1em;
+    grid-gap: 1.5em;
+    width: 100%;
+
+}
+
+.creatorsMain{
+    margin-top: 4em;
+}
+
+.creatorsMain .box{
+    display: flex;
+    padding-left:0.5em;
+    font-weight: bolder;
+    
+}
+
+.creatorsMain .creator{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: -5em;
+}
+
+.creatorsMain .main{
+    
+    object-fit: cover;
+    height: 342px;
+    width: 280px;
+
+}
+
+.creatorsMain .Black{
+    text-overflow: ellipsis;
+
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+ 
+}
+
+
+
+@media screen and (max-width: 1235px) {
+     
+    .creatorsMain .Grid{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 920px) {
+     
+    .creatorsMain .Grid{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    
+    .creatorsMain .Grid{
+         display: grid;
+         grid-template-columns:  1fr;
+    }
+}
